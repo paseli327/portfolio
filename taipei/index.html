@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../common/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap">
+<link rel="stylesheet" href="../common/style.css">
+<link rel="stylesheet" href="styles/style.css">
+<title>台湾観光サイト｜台北</title>
+</head>
+<body>
+    <!-- ローディング画面 bodyタグのすぐ下に -->
+    <div id="loading">
+      <picture>
+        <source srcset="images/pcLoadingLogo.png" media="(min-width: 769px)">  
+        <source srcset="images/spLoadingLogo.png" media="(max-width: 768px)">  
+        <img src="images/spLoadingLogo.png" alt="HPのロゴ画像">                
+      </picture>
+    </div>
+    <header>
+      <div id="headerContainer">
+        <a href="../index.html">
+          <picture>
+            <source srcset="images/pcLogo.png" media="(min-width: 769px)">  <!-- PC用画像 -->
+            <source srcset="images/spLogo.png" media="(max-width: 768px)">  <!-- スマホ用画像 -->
+            <img src="images/pcLogo.png" alt="HPのロゴ画像">                 <!-- フォールバック(通常のimg)-->
+          </picture>
+        </a>
+        <button id="drawerOpenButton" aria-label="メニューを開く">
+          <img src="images/drawerOpenButton.png" alt="メニューを開く">
+        </button>
+        <div id="drawerMenu">
+          <div id="drawerClose">
+            <button id="drawerCloseButton" aria-label="メニューを閉じる">
+              <img src="images/drawerCloseButton.png.png" alt="メニューを閉じる">   
+            </button>        
+          </div>
+          <nav id="spHeaderNav">    <!---- sp用navドロワーメニュー ---->
+              <h2>Menu</h2>
+            <ul>
+              <li><a href="../index.html">Top</a></li>
+              <li class="spDrawerLinks"><a href="../taipei/index.html">台北</a></li>
+              <li class="spDrawerLinks"><a href="../taichu/index.html">台中</a></li>
+              <li><a href="../tainan/index.html">台南</a></li>
+              <li><a href="#">当サイトのポリシー</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav id="pcHeaderNav">    <!---- pc用navメニュー ---->
+          <ul>
+            <li><a href="../index.html">Top</a></li>
+            <li><a href="../taipei/index.html">台北</a></li>
+            <li><a href="../taichu/index.html">台中</a></li>
+            <li><a href="../tainan/index.html">台南</a></li>
+            <li><a href="#">当サイトのポリシー</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="top">
+        <img src="images/mainLogo.png" class="spImg mainLogo" alt="HPのロゴ画像">
+        <img src="images/pcMainLogo.png" class="pcImg mainLogo" alt="HPのロゴ画像">
+      <div class="linkIcon">
+        <a href="" rel="" class="icon"><img src="images/facebook.png" alt="フェイスブックへのリンク"></a><br>
+        <a href="" rel="" class="icon instagram"><img src="images/instagram.png" alt="インスタグラムへのリンク"></a><br>
+        <a href="" rel="" class="icon"><img src="images/twitter.png" alt="ツイッターへのリンク"></a>
+      </div>
+      <p class="headerText">台北市は台湾の中心地です。活気にあふれる街台北ではさまざまな建物、台北を生きる人の美しい風景を見ることができます。</p>
+      </div>
+      <nav class="nav">
+      <a href="../index.html" class="pcHome">Home</a>
+      <a href="../index.html" class="SPtop">Top</a>
+      ＞<a href="../index.html">Travel</a>＞<a href="#">台北</a></nav>
+      <hr>
+      <section>
+        <h1>Attraction<span class="japanese">観光名所</span></h1>
+        <article class="kyuhun"> 
+          <h2>九份</h2>
+          <div class="article1">
+            <img src="images/kyuhunMain.png" class="spImg" alt="九份のメイン画像">
+            <img src="images/pcKyuhunMain.png" class="pcImg"alt="九份のメイン画像">
+            <p class="explanation">細い路地の階段に沿って建つ古い館に、提灯が灯るノスタルジックな風景。1989年、映画「非情城市」の
+            舞台になったことをきっかけに再び注目を集めると共に、日本では、九份の町中にある建物が2001年公開の映画
+            「千と千尋の神隠し」に登場する湯婆婆の湯屋を彷彿させるとして話題に。日本統治時代に建てられた古い建物が残ることから、
+            どこか懐かしい雰囲気が漂う町並みは日本人の琴線に触れ、今や台湾で行きたい観光地ナンバーワンとなりました。
+            </p>
+          </div>
+          <div class="article2">
+          <div class="subImg">
+            <img src="images/kyuhunSub1.png" class="spImg" alt="九份のサブ画像１">
+            <img src="images/pcKyuhunSub1.png" class="pcImg" alt="九份のサブ画像１">
+            <img src="images/kyuhunSub2.png" style="margin-left: 20px;" class="spImg" alt="九份のサブ画像２">
+            <img src="images/pcKyuhunSub2.png" style="margin-left: 20px;" class="pcImg" alt="九份のサブ画像２">
+          </div>
+          <p class="explanation" style="text-align: center;">おすすめ観光時間は幻想的な夕暮れがねらい目<br><span class="time">15:00～19:00</span></p>
+          </div>
+        </article>
+        <hr>
+        <article>
+          <h2>台北101</h2>
+          <div class="article1">
+            <img src="images/taipeiMain.png" class="spImg" alt="台北のメイン画像">
+            <img src="images/pcTaipeiMain.png" class="pcImg" alt="台北のメイン画像">
+            <p class="explanation">高さは509.2m　地下5階＋地上101階からなり、名前の由来にもなっている。
+              エレベーターは東芝エレベータ製で、毎分1,010メートル（時速60.6キロメートル）の速さで上昇でき、
+              地上1階から展望台のある89階（地上382.2メートル）まで39秒で到達する。展望台、オフィス、レストラン、
+              ショッピングモールなどが入る台湾を代表するランドマークワー。有名なカウントダウンパーティーをはじめ節目に合わせた
+              ライトアップを行っています。
+            </p>
+          </div>
+          <div class="article2">
+            <div class="subImg">
+              <img src="images/taipeiSub1.png" class="spImg" alt="台北のサブ画像１">
+              <img src="images/pcTaipeiSub1.png" class="pcImg" alt="台北のサブ画像１">
+              <img src="images/taipeiSub2.png" style="margin-left: 20px;" class="spImg" alt="台北のサブ画像２">
+              <img src="images/pcTaipeiSub2.png" style="margin-left: 20px;" class="pcImg" alt="台北のサブ画像２">
+            </div>
+            <p class="explanation" style="text-align: center;">おすすめ観光時間は展望台営業時間帯<br><span class="time">11:00～19:00</span></p>
+          </div>    
+        </article>
+        <hr>
+      </section>
+      <section>
+      <h1 class="yoichiLogo">NightMarket<span class="japanese">夜市</span></h1>
+      <div class="article1">
+        <p class="yoichiExplanation">台北観光の夜の目玉と言えば、なんと言っても夜市（ナイトマーケット）があげられます。 
+          毎日市内の各所でひらかれ、夕方から夜遅くまで多くの人々で賑わっています。 絶品Ｂ級グルメ・小吃からファッション、
+          ゲームといったお店が集まっています。
+        </p>
+        <img src="images/yoichi1.png" class="spImg" alt="夜市の画像１">
+        <img src="images/pcYoichi1.png" class="pcImg"  alt="夜市の画像１" style="width: 540px; height: 264px;">        
+      </div>
+      <!-- ボタン -->
+
+      <div class="article2 yoichiLink">
+        <div class="yoichi3">
+          <div class="nightMarket market1">
+            <button class="jsModalButton" data-target="modal1">寧夏夜市</button>
+            <button class="jsModalButton" data-target="modal2">饒河街観光夜市</button>
+          </div>
+          <div class="nightMarket market2">
+            <button class="jsModalButton" data-target="modal3">士林夜市</button>
+            <button class="jsModalButton" data-target="modal4">通化夜市</button>
+          </div>
+        </div>
+        <img src="images/yoichi2.png" class="spImg" alt="夜市の画像２">
+        <img src="images/pcYoichi2.png" class="pcImg" alt="夜市の画像２" style="width: 540px; height: 264px;">
+      </div>
+<!-- モーダル -->
+  <div class="modal jsModal" id="modal1">
+    <div class="modalContainer">
+      <div class="modalClose jsModalClose">
+        <img src="images/spModalClose.png" class="spImg" alt="モーダル閉じるボタン">
+        <img src="images/pcModalClose.png" class="pcImg" alt="モーダル閉じるボタン">
+      </div>
+      <div class="modalContent">
+        <h4>寧夏夜市</h4>
+        <div class="pcModal">
+        <div class="pcModal1">
+          <img src="images/modal1.png" class="spImg" alt="寧夏夜市の画像">
+          <img src="images/pcModal1.png" class="pcImg" alt="寧夏夜市の画像">
+        </div>
+        <div class="pcModal2">
+          <p class="modalExplanation">寧夏路夜市は台湾伝統の屋台料理やB級グルメがメインの夜市です。特に大同区の圓環付近には懐かしいグルメがたくさん
+          集まっていますので、思う存分味わってください。また、ここの夜市は歩道と車道が分かれているので、食事やショッピングに便利です。
+          食の夜市とも言われる寧夏路夜市には毎日、大勢の人々が訪れています。
+          </p>
+          <p>営業時間</p>
+          <ul>
+            <li>日曜日17:00 - 25:00</li>
+            <li>月曜日17:00 - 25:00</li>
+            <li>火曜日17:00 - 25:00</li>
+            <li>水曜日17:00 - 25:00</li>
+            <li>木曜日17:00 - 25:00</li>
+            <li>金曜日17:00 - 25:00</li>
+            <li>土曜日17:00 - 25:00</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- モーダル2 -->
+  <div class="modal jsModal" id="modal2">
+    <div class="modalContainer">
+      <div class="modalClose jsModalClose">
+      <img src="images/spModalClose.png" class="spImg" alt="モーダル閉じるボタン">
+      <img src="images/pcModalClose.png" class="pcImg" alt="モーダル閉じるボタン">
+      </div>
+      <div class="modalContent">
+        <h4>饒河街観光夜市</h4>
+        <div class="pcModal">
+        <div class="pcModal1">
+          <img src="images/modal2.png" class="spImg" alt="饒河街観光夜市の画像">
+          <img src="images/pcModal2.png" class="pcImg" alt="饒河街観光夜市の画像">
+        </div>
+        <div class="pcModal2">
+          <p class="modalExplanation">饒河街観光夜市は、屋台料理から雑貨や生活用品も扱う夜市です。その手ごろな値段が魅力的で、
+          多くの人々で賑わいます。最も観光客に人気があるのは「藥燉排骨」「胡椒餅」「水煎包」「蚵仔麵線」など行列ができる人気料理と、
+          「麻辣臭豆腐」「牛肉麵」「天婦羅」など台湾の伝統的な屋台料理も定番です。
+          </p>
+          <p>営業時間</p>
+          <ul>
+            <li>日曜日17:00 - 23:00</li>
+            <li>月曜日17:00 - 23:00</li>
+            <li>火曜日17:00 - 23:00</li>
+            <li>水曜日17:00 - 23:00</li>
+            <li>木曜日17:00 - 23:00</li>
+            <li>金曜日17:00 - 23:00</li>
+            <li>土曜日17:00 - 23:00</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- モーダル3 -->
+  <div class="modal jsModal" id="modal3">
+    <div class="modalContainer">
+      <div class="modalClose jsModalClose">
+      <img src="images/spModalClose.png" class="spImg" alt="モーダル閉じるボタン">
+      <img src="images/pcModalClose.png" class="pcImg" alt="モーダル閉じるボタン">
+      </div>
+      <div class="modalContent">
+        <h4>士林夜市</h4>
+        <div class="pcModal">
+        <div class="pcModal1">
+          <img src="images/modal3.png" class="spImg" alt="士林夜市の画像">
+          <img src="images/pcModal3.png" class="pcImg" alt="士林夜市の画像">
+        </div>
+        <div class="pcModal2">
+          <p class="modalExplanation">ここは市内で最も規模が大きく知名度の高い夜市で、台湾のおいしい屋台グルメからユニークな雑貨まで、
+            ありとあらゆるものが売られています。その種類の豊富さ、敷地の広さ、歴史、そして夜遊びスポットとしての人気度と、
+            士林夜市の魅力は何から何まで台北ナンバーワン。台北観光では絶対にはずせない魅惑スポットです。
+          </p>
+          <p>営業時間</p>
+          <ul>
+            <li>日曜日16:00 - 00:00</li>
+            <li>月曜日16:00 - 00:00</li>
+            <li>火曜日16:00 - 00:00</li>
+            <li>水曜日16:00 - 00:00</li>
+            <li>木曜日16:00 - 00:00</li>
+            <li>金曜日16:00 - 00:00</li>
+            <li>土曜日16:00 - 00:00</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- モーダル4 -->
+  <div class="modal jsModal" id="modal4">
+    <div class="modalContainer">
+      <div class="modalClose jsModalClose">
+      <img src="images/spModalClose.png" class="spImg" alt="モーダル閉じるボタン">
+      <img src="images/pcModalClose.png" class="pcImg" alt="モーダル閉じるボタン">
+      </div>
+      <div class="modalContent">
+        <h4>通化夜市</h4>
+        <div class="pcModal">
+        <div class="pcModal1">
+          <img src="images/modal4.png" class="spImg" alt="通化夜市の画像">
+          <img src="images/pcModal4.png" class="pcImg" alt="通化夜市の画像">
+        </div>
+        <div class="pcModal2">
+        <p class="modalExplanation">台北の他の夜市と比べると小規模ではあるものの、食べ物においてはどの夜市にも決して劣りません。
+          有名な駱記小炒(炒め物)、裕品元の氷火湯円、平価鉄板焼、通化夜市の揚げサツマイモボールは、ぜひとも賞味したい特色的な伝統軽食です。
+          マッサージ店もたくさんあり、1日の終わりに最適な夜市です。
+        </p>
+        <p>営業時間</p>
+        <ul>
+          <li>日曜日18:00 - 24:00</li>
+          <li>月曜日18:00 - 24:00</li>
+          <li>火曜日18:00 - 24:00</li>
+          <li>水曜日18:00 - 24:00</li>
+          <li>木曜日18:00 - 24:00</li>
+          <li>金曜日18:00 - 24:00</li>
+          <li>土曜日18:00 - 24:00</li>
+        </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <hr>
+      </section>
+      <section class="access">
+        <h1>Access<span class="japanese">交通手段</span></h1>
+        <h3>各地へのアクセスにご利用ください<hr></h3>
+        <img src="images/access.png"  class="spImg" alt="アクセスに関する画像">
+        <img src="images/PCaccess.png"  class="pcImg" alt="アクセスに関する画像">
+        <dl>
+          <div class="access1"><dt>■MRT　<span class="price">地下鉄：初乗り20元</span></dt>
+            <dd>乗り方は日本の地下鉄とほぼ同じ。改札を通る時には、切符・ICカード共にタッチ。台北MRTは全て各駅停車です。</dd>
+          </div>
+          <div class="access2"><dt>■バス<span class="price">：初乗り15元</span></dt>
+            <dd>バス停は、ポールが立っているだけ、大通りでは車道の真ん中のバスレーン沿いにあります。
+            乗りたい場合、バスに向かって手を挙げます。乗車して、現金で払う場合は運転手に行先を告げて運賃箱にお金を入れます。</dd>
+          </div>
+          <div class="access3"><dt>■タクシー<span class="price">：初乗り70元</span></dt>
+            <dd>市内の移動で気軽に使うことが出来ます。MRTなどが運行しない真夜中や早朝の移動にも便利です。新幹線の駅や有名観光地などには
+            タクシー乗り場が準備されているので、そこから乗りましょう。ホテルならフロントで呼んでもらいます。</dd>
+          </div>
+          <div class="access4"><dt>■<span class="easycard">EASYCARD　</span><span class="price">悠遊カード：販売額100元</span></dt>
+            <dd>現金をチャージして使うことが出来る交通系ICカード。台北旅行の際に手に入れておくと便利です。MRT・バス・台湾鉄路などで
+            使用することができ、切符を買う手間がなく、運賃が割引（MRTは二割引き）になります。</dd>
+          <figure>
+            <img src="images/card.png" class="spImg" style="margin-top:20px" alt="悠遊カードの画像">
+            <img src="images/pcCard.png"class="pcImg" style="margin-top:73.2px" alt="悠遊カードの画像">
+          </figure>
+          </div>
+        </dl>
+        <button class="toTop" id="backToTop">
+          <img src="images/toTop.png" class="spImg" alt="トップページへ戻るボタン">
+          <img src="images/pcToTop.png" class="pcImg" alt="トップページへ戻るボタン">
+        </button>
+      </section>
+    </main>
+    <footer>
+     <div id="footerContainer">
+        <div id="taiwanFlag">
+          <picture>
+            <source srcset="images/pcFooterTaiwanFlag.png" media="(min-width: 769px)">  <!-- PC用画像 -->
+            <source srcset="images/spFooterTaiwanFlag.png" media="(max-width: 768px)">  <!-- スマホ用画像 -->
+            <img src="images/spFooterTaiwanFlag.png" alt="台湾の旗">                 <!-- フォールバック(通常のimg)-->
+          </picture>
+        </div>
+        <div id="footerLinks">
+          <nav id="footerNav">
+            <ul>
+              <li id="spOnlyListItem"><a href="../index.html">TOPへもどる</a></li>
+              <li><a href="../taipei/index.html">台北</a></li>
+              <li><a href="../taichu/index.html">台中</a></li>
+              <li><a href="../tainan/index.html">台南</a></li>
+              <li><a href="#">当サイトのポリシー</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+          <div id="footerLogoArea">
+            <picture>
+              <source srcset="images/pcFooterLogo.png" media="(min-width: 769px)">  <!-- PC用画像 -->
+              <source srcset="images/spFooterLogo.png" media="(max-width: 768px)">  <!-- スマホ用画像 -->
+              <img src="images/spFooterLogo.png" alt="台湾サイトのロゴ">                 <!-- フォールバック(通常のimg)-->
+            </picture>
+            <div id="footerSocialIcons">
+              <a href="#" aria-label="Facebookのアイコン">
+                <img src="images/facebook.png" alt="Facebookのアイコン">
+              </a>
+              <a href="#" aria-label="Instagramのアイコン">
+                <img src="images/instagram.png" alt="Instagramのアイコン">
+              </a>
+              <a href="#" aria-label="Twitterのアイコン">
+                <img src="images/twitter.png" alt="witterのアイコン">
+              </a>
+            </div>
+          </div>
+        </div>
+        <p id="copyright">Copyright (C) 2023 TAIWAN.traveler.cc </p>
+      </div>
+    </footer>
+    <script src="../common/jQuery.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

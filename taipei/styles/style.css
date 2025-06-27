@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+body {
+    font-size:12px;
+    line-height: 19.2px;
+    background-color: #F4F4F4;
+    width: 375px;
+    margin: 0 auto;
+}
+
+.top {
+    background-image: url(../images/spHero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3px 20px 8px;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.pcImg {
+    display: none;
+}
+.spImg {
+    display: block;
+}
+
+.pcHome {
+    display: none;
+}
+
+.icon {
+ display: inline-block;
+}
+
+.instagram {
+    margin: 20px 0;
+}
+
+.mainLogo {
+    margin:72px auto;
+}
+
+.headerText {
+    color: #fff;
+    font-weight: bold;
+    width:247px;
+    margin:0 0 0 auto;
+}
+
+.nav {
+  margin: 8px auto 8px 20px; 
+  font-size: 16px;
+}
+
+section  {
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+
+section img {
+    margin: 0 auto;
+}
+
+section hr {
+    width: 223px;
+    margin: 40px auto 0;
+}
+
+h1 {
+    background: url(../images/headingFrame.png) no-repeat;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.japanese {
+    font-size: 12px;
+    display: block;
+    position: relative;
+    top: 0.5em;
+    margin-left: 0.3em;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px auto 20px;
+}
+
+.explanation {
+    background-color: rgba(108, 186, 216,20%);
+    padding: 8px 36px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.subImg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.time {
+    font-weight: bold;
+    text-align: center;
+}
+
+.yoichiExplanation{
+    width: 222px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 12px 0px;
+    margin: 60px auto 40px;
+    text-align: left;
+}
+
+.nightMarket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.market1 {
+    margin-top: 20px;
+}
+.market2 {
+    margin: 32px auto 20px;
+}
+
+/*モーダルここから  */
+/* モーダルを開くボタン */
+.jsModalButton {
+    background-image: url(../images/buttonFrame.png);
+    width: 131.5px;
+    height:48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* モーダルと背景の指定 OK*/
+.modal {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* ←★追加ここ！画面全体にする */
+  opacity: 0;
+  visibility: hidden;   /* 文書のレイアウトを変更することなく要素を表示したり非表示にしたりする */
+  transition: 300ms;
+  display: flex;
+  align-items: center;
+}
+
+/* クラスが追加された時の指定 */
+.modal.isActive{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダル内側の指定 */
+.modalContainer{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 375px;
+}
+
+/* モーダルを閉じるボタンの指定 */
+.modalClose{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+/* モーダルのコンテンツ部分の指定 */
+.modalContent{
+    font-size:12px;
+    line-height: 19.2px;
+    background-color: rgba(0, 128, 190,90%);
+    color:#fff;
+    text-align: center;
+    margin:0 auto;
+    padding: 40px 20px;
+}
+
+.modalContent .modalExplanation {
+    margin: 20px auto;
+    text-align: left;
+    width: 303px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 32px;
+    background-image: none;
+}
+
+.modalContent ul {
+    font-weight: bold;
+}
+
+.modalContent p{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+/* モーダルここまで */
+
+h3 {
+    margin: 40px auto 12px;
+    /* border-bottom: 1px solid #000;
+    width: 223px; */
+}
+
+.access hr {
+    margin: 12px auto 40px;
+}
+
+dl {
+    width: 225px;
+    margin: 40px auto 20px;
+    text-align: left;
+}
+
+.price {
+    font-weight: normal;
+}
+
+dt {
+    margin:20px auto 12px;
+    font-weight: bold;
+}
+
+dd {
+    margin:0px;
+}
+
+.access {
+    position:relative;
+    padding-bottom: 20px;
+}
+
+.toTop img {
+    margin: 0px;
+    position: fixed;
+    right: calc((100% - 375px) / 2 + 4px);
+    bottom: 4px;
+}
+
+#taiwanFlag img {
+    margin:0 auto;
+}
+body.noScroll {
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: 768px)
+{
+
+body {
+    font-size: 20px;
+    line-height: 32px;
+    width: 1366px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.spImg {
+    display: none;
+}
+.pcImg {
+    display: block;
+}
+
+.SPtop {
+    display: none;
+}
+.pcHome {
+    display: inline;
+}
+
+.logo {
+    display: none;
+}
+
+.instagram {
+    margin: 32px 0;
+}
+
+.top {
+    background-image: url(../images/pcHero.png);
+    height:768px;
+    padding: 94px 103px 20px;
+}
+
+.headerText {
+    position: absolute;
+    left: 796px;
+    top: 652px;
+    width: 467px;
+    height: 96px;
+}
+
+.linkIcon {
+    position: absolute;
+    top: 512px;
+    left: 103px;
+}
+
+.mainLogo {
+    position: absolute;
+    left: 363px;
+    margin: 0;
+}
+
+.nav {
+    font-size:20px;
+    margin-left: 103px;
+}
+
+section {
+    padding: 20px 103px;
+    text-align: start;
+}
+
+section img {
+    margin: 0px;
+}
+
+h1 {
+    background: url(../images/pcHeadingFrame.png) no-repeat;
+    height: 96px;
+    width: 530px;
+    font-size: 48px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.japanese {
+    font-size:24px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 80px 0 20px;
+}
+
+.article1, .article2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article1 img {
+    width: 600px;
+    height: 360px;
+}
+
+.article2 {
+    margin-top: 20px;
+}
+
+.explanation {
+    width: 500px;
+    margin:0 0 0 60px;
+    padding: 20px 40px;
+}
+
+.article2 .explanation {
+    line-height: 2.0 ;
+}
+
+section hr {
+    width: 480px;
+    margin: 80px auto;
+}
+
+.subImg {
+    width: 600px;
+    height: 167px;
+}
+
+.subImg img {
+    height: 167px;
+    width: 290px;
+}
+
+.yoichiLogo {
+    margin: 0 0 80px auto;
+}
+
+.yoichiExplanation {
+    width: 420px;
+    height: 264px;
+    align-items: center;
+    padding: 36px 0px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 0;
+}
+
+.yoichiLink {
+    margin-top: 120px;
+}
+
+h3 {
+    width:530px;
+    margin: 80px 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.access {
+    height: 1864px;
+    padding-top: 0;
+}
+
+.access h1 {
+    margin-top: 0;
+}
+
+.access hr {
+    width: 420px;
+    margin: 40px auto 80px;
+}
+
+.access img {
+    margin:0 auto;
+} 
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1040px;
+    height: 832px;
+    font-size: 24px;
+}
+
+.access1, .access2, .access3, .access4 {
+    flex-basis: 480px;
+    padding: 40px;
+}
+
+dl dt {
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.easycard {
+    display: none;
+}
+
+.access2, .access4 {
+    margin-left: 80px;
+}
+
+.toTop img {
+    margin:0px;
+    position:fixed;
+    right: calc((100% - 1366px) / 2 + 20px);
+    bottom:20px;
+}
+
+.yoichi3 {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 220px
+}
+
+.yoichi1 {
+    margin:0px auto 32px;
+}
+.yoichi2 {
+    margin: 0px auto 20px;
+}
+
+.nightMarket {
+    justify-content: space-between;
+}
+
+.market2 {
+    margin: 40px 0 0 0;
+}
+
+.jsModalButton {
+    background-image: url(../images/pcButtonFrame.png);
+    width: 210px;
+    height: 90px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.modalContent {
+    padding: 40px 103px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.modalContainer {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100vw;
+}
+
+.pcModal {
+    display: flex;
+}
+
+.pcModal1 {
+    margin-right: 60px;
+    width: 600px;
+    height: 468px;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: bold;
+    height: 36px;
+    width: 252px;
+    margin: 0 0 20px 0;
+    text-align: start;
+}
+
+.modalContent .modalExplanation {
+    width: 500px;
+    margin:0 auto 20px;
+}
+
+.modalContent li {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+}
