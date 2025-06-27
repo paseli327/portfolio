@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../common/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap">
+<link rel="stylesheet" href="../common/style.css">
+<link rel="stylesheet" href="styles/style.css">
+<title>台湾観光サイト｜台中</title>
+</head>
+<body>
+        <!-- ローディング画面 bodyタグのすぐ下に -->
+    <div id="loading">
+      <picture>
+        <source srcset="images/pcLoadingLogo.png" media="(min-width: 769px)">  
+        <source srcset="images/spLoadingLogo.png" media="(max-width: 768px)">  
+        <img src="images/pcLoadingLogo.png" alt="HPのロゴ画像">                
+      </picture>
+    </div>
+    <header>
+      <div id="headerContainer">
+        <a href="../index.html">
+          <picture>
+            <source srcset="images/PClogo.png" media="(min-width: 769px)">  <!-- PC用画像 -->
+            <source srcset="images/spLogoType.svg" media="(max-width: 768px)">  <!-- スマホ用画像 -->
+            <img src="images/PClogo.png" alt="HPのロゴ画像">                 <!-- フォールバック(通常のimg)-->
+          </picture>
+        </a>
+        <button id="drawerOpenButton" aria-label="メニューを開く">
+          <img src="images/drawerOpenButton.png" alt="メニューを開く">
+        </button>
+        <div id="drawerMenu">
+          <div id="drawerClose">
+            <button id="drawerCloseButton" aria-label="メニューを閉じる">
+              <img src="images/drawerCloseButton.png" alt="メニューを閉じる">   
+            </button>        
+          </div>
+          <nav id="spHeaderNav">    <!---- sp用navドロワーメニュー ---->
+              <h2>Menu</h2>
+            <ul>
+              <li><a href="../index.html">Top</a></li>
+              <li class="spDrawerLinks"><a href="../taipei/index.html">台北</a></li>
+              <li class="spDrawerLinks"><a href="#">台中</a></li>
+              <li class="spDrawerLinks"><a href="../tainan/index.html">台南</a></li>
+              <li><a href="#">当サイトのポリシー</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav id="pcHeaderNav">    <!---- pc用navメニュー ---->
+          <ul>
+            <li><a href="../index.html">Top</a></li>
+            <li><a href="../taipei/index.html">台北</a></li>
+            <li><a href="#">台中</a></li>
+            <li><a href="../tainan/index.html">台南</a></li>
+            <li><a href="#">当サイトのポリシー</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="top">
+        <img src="images/PCmainLogo.png" class="pcImg mainLogo" alt="HPのロゴ画像">
+        <img src="images/spMainLogo.png" class="spImg" alt="spのロゴ画像">
+        <div class="linkIcon">
+            <a href="" rel="" class="icon"><img src="images/facebook.png" alt="フェイスブックへのリンク"></a><br>
+            <a href="" rel="" class="icon"><img src="images/instagram.png" alt="インスタグラムへのリンク"></a><br>
+            <a href="" rel="" class="icon"><img src="images/twitter.png" alt="ツイッターへのリンク"></a>
+        </div>
+        <p class="headerText">台湾で2番目の大都市を誇る台中市。台中市は台湾中部の台中盆地にあり、いくつもの河川が台中市の中心地を貫いています。</p>
+        </div>
+        <nav class="nav"><a href="../index.html" rel="">Top</a>＞<a href="../index.html" rel="">Travel</a>＞<a href="" rel="">台北</a></nav>
+        <hr>
+        <section class="attraction">
+            <div class="titleAttraction">
+            <h1>Attraction</h1>
+            <p>観光名所</p>
+            </div>
+          <h2>高美湿地</h2>
+          <div class="mainAttraction">
+            <img src="images/sittiMainImg.png">
+            <div class="mainAttractionText">
+            <p>台中から北西へ約20km、大甲溪の河口に広がるおよそ1500ヘクタールの高美湿地は、
+              天気など条件が重なると周りの風景を鏡面のように反射させることから、「台湾のウユニ塩湖」と呼ばれ注目を集めています。
+              湿地には100種以上の鳥が生息しており、バードウォッチングを楽しんでいる人も多く、
+              周辺には海から吹き付ける風を利用した風力発電の施設が立ち、人工物と自然の景色が独特の景観をつくり出す穴場のスポットです。</p>
+              </div>
+          </div>
+          <div class="subAttraction">
+            <img src="images/sittiSubImg.png">
+            <div class="subAttractionText">
+            <p>おすすめ観光時間は干潮時日暮れとのタイミングが狙い時です。</p>
+          </div>
+          </div>
+           <hr class="hr1">
+           <h2>彩虹眷村</h2>
+          <div class="mainAttraction">
+            <img src="images/muraMainImg.png">
+            <div class="mainAttractionText mainAttractionText2">
+            <p>台湾中部台中市には「彩虹眷村」というあまりにもインパクトのある場所があります。
+              一度見たら忘れられない鮮やかな色使いの絵で埋め尽くされたこの地区、日本語にすると「虹の村」と称されるこの場所は、
+              家にも壁にも道路にもびっしりと絵が描かれています。
+              そしてこの絵を描いたのは、たった一人のおじいちゃんなのです。今回は見れば元気になる台中市の必見スポットをご紹介します。</p>
+              </div>
+          </div>
+          <div class="subAttraction">
+            <img src="images/muraSubImg.png">
+            <div class="subAttractionText">
+            <p>住民の方がいるので早朝や夜の訪問は控え、日中に訪れましょう。</p>
+          </div>
+          </div>
+           <hr class="hr1">
+        </section>
+        <section class="museum">
+           <div class="titleAttraction">
+            <h1>Museum</h1>
+            <p>博物館</p>
+            </div>
+            <div class="titleText">
+            <hr class="hr2">
+            <p class="test">文化の街とも呼ばれる台中。その中でもおすすめの博物館をご紹介します。</p>
+            <hr class="hr2">
+              </div>
+            <article>
+              <div class="artMuseum1">
+                    <div class="antique">
+                    <h3>アンティーク美術館</h3>
+                    <h2>新天地西洋博物館</h2>
+                    <img src="images/museum.png">
+                    <button class="modalOpenBtn">営業時間を見る</button>
+                    </div>
+                    <div class="sciense">
+                    <h3>科学美術館</h3>
+                    <h2>アジア近代美術館</h2>
+                    <img src="images/art.png">
+                    <button class="modalOpenBtn">営業時間を見る</button>
+                    </div>
+              </div>
+              <div class="literature">
+                <div class="artMuseum3">
+                  <h3>屋内外美術館</h3>
+                  <h2>勤美術館</h2>
+                  <img src="images/kin.png">
+                  <button class="modalOpenBtn">営業時間を見る</button>
+                </div>
+                <div class="literature1">
+                  <h3>歴史文学を学ぶ</h3>
+                  <h2>台中文学館</h2>
+                  <img src="images/bun.png">
+                  <button class="modalOpenBtn">営業時間を見る</button>
+                </div>
+              </div>
+            </article> 
+        <div id="modalWindow" class="modal">
+                  <div id="modalContent">
+                    <div id="modalTitleArea">
+                      <h3 id="modalTitle"></h3>
+                      <button id="modalCloseBtn"></button>
+                    </div>
+                    <div id="modalImageArea">
+                      <img id="modalImage1" alt="拡大画像">
+                      <img id="modalImage2" alt="拡大画像">
+                    </div>
+                    <div id="modalCaption">
+                      <p>営業時間</p>
+                      <p id="openingHours"></p>
+                      <p id="adress"></p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr1">
+        </section>
+        <section class="sweets">
+              <div class="titleAttraction">
+                <h1>Sweets</h1>
+                <p>スイーツ</p>
+              </div>
+              <div class="miyahara">
+                  <h3>宮原眼科</h3>
+                  <style>
+                     hr {
+                      margin: 20px 0; /* 上下10pxの余白を入れる */
+                     }
+                  </style>
+                  <hr class="hr2">
+                  <p>台湾全土でも大人気のスイーツが集まる台中市で絶対人気を誇るお店、
+                    宮原眼科をご紹介します。</p>
+              </div>
+              <div class="miyahara1"> 
+                <div class="miyahara2">
+                  <img src="images/sweets.png">
+                </div>
+                <div class="miyahara3">
+                  <p>台湾の台中にある宮原眼科は、日本統治時代の1927年、日本人の宮原武熊
+                    という眼科医が開院し、1945年までは台中で最大規模の眼科診療所でした。
+                    宮原医師が日本に帰国後、パイナップルケーキとチーズケーキで有名な台湾
+                    の日出グループが、1年半の時間を費やし建物を修復し、店舗にしています。</p>
+                </div>
+              </div> 
+              <div class="miyahara4">
+                <div class="miyahara5">
+                <img src="images/miyasab1.png">
+                </div>
+                <div class="miyahara6">
+                <img src="images/miyasab2.png">
+                </div>
+              </div>
+              <div class="teaTime">
+                <div class="teaTime1">
+                  <p>そして現在は、宮原眼科の特徴ある建物や、そこで売られている台湾グルメや
+                    スイーツを楽しむ人々で、とても賑わっています。</p>
+                </div>
+                <div class="teaTime2">
+                  <img src="images/miyatea.png" alt="カステラとお茶の画像">
+                </div>
+              </div>
+              <hr class="hr1">
+        </section>
+          <div class="toTop" id="backToTop">
+    <button>
+      <img src="images/toTop.png" class="spImg1" alt="トップページへ戻るボタン">
+      <img src="images/pcToTop.png" class="pcImg1" alt="トップページへ戻るボタン">
+    </button>
+  </div>
+
+    </main>
+    <footer>
+     <div id="footerContainer">
+        <div id="taiwanFlag">
+          <picture>
+            <source srcset="images/pcFooterTaiwanFlag.png" media="(min-width: 769px)">  <!-- PC用画像 -->
+            <source srcset="images/spFooterTaiwanFlag.png" media="(max-width: 768px)">  <!-- スマホ用画像 -->
+            <img src="images/spFooterTaiwanFlag.png" alt="台湾の旗">                 <!-- フォールバック(通常のimg)-->
+          </picture>
+        </div>
+        <div id="footerLinks">
+          <nav id="footerNav">
+            <ul>
+              <li id="spOnlyListItem"><a href="../index.html">TOPへもどる</a></li>
+              <li><a href="../taipei/index.html">台北</a></li>
+              <li><a href="../taichu/index.html">台中</a></li>
+              <li><a href="#">台南</a></li>
+              <li><a href="#">当サイトのポリシー</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+          <div id="footerLogoArea">
+            <picture>
+              <source srcset="images/pcFooterLogo.png" media="(min-width: 769px)">  <!-- PC用画像 -->
+              <source srcset="images/spFooterLogo.png" media="(max-width: 768px)">  <!-- スマホ用画像 -->
+              <img src="images/pcFooterLogo.png" alt="台湾サイトのロゴ">                 <!-- フォールバック(通常のimg)-->
+            </picture>
+            <div id="footerSocialIcons">
+              <a href="#" aria-label="Facebookのアイコン">
+                <img src="images/facebook.png" alt="">
+              </a>
+              <a href="#" aria-label="Instagramのアイコン">
+                <img src="images/instagram.png" alt="">
+              </a>
+              <a href="#" aria-label="Twitterのアイコン">
+                <img src="images/twitter.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <p id="copyright">Copyright (C) 2023 TAIWAN.traveler.cc </p>
+      </div>
+    </footer>
+    <script src="../common/jQuery.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
