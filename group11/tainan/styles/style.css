@@ -1,0 +1,579 @@
+@charset "utf-8";
+
+body {
+  width: 1366px;
+  margin: 0 auto;
+  background-color: #FDFCFA;
+}
+/*//////////////////////////// ヒーローの設定 ////////////////////////////*/
+.hero{
+  position: relative;
+}
+.hero p {
+  position: absolute;
+  width: 467px;
+  height: 96px;
+  color: #ffffff;
+  left: 796px;
+  top: 652px;
+  font-weight: bold;
+}
+#tainanLogo picture {
+  position: absolute;
+  z-index: 10;
+  left: 363px;
+  top: 94px;
+}
+#heroSocialIcons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 38.9px;
+  height: 176px;
+  top: 512px;
+  left: 103px;
+}
+.breadcrumb{
+  height: 58px;
+  padding: 20px 0 18px 103px;
+  border-bottom: 1px solid;
+}
+.breadcrumbList {
+  display: flex;
+}
+
+.breadcrumbList li::after {
+  content: "＞";
+  margin: 0 5px;
+}
+.breadcrumbList li:last-child::after {   /* 最後の「＞」を非表示にする */
+  content: "";
+}
+.innerWrapWide{
+  margin: 0 103px;
+}
+.innerWrapShort {
+  margin: 0 143px;
+
+}
+/*//////////////////////////// セクションタイトルの設定 ////////////////////////////*/
+.sectionTitle {
+  position: relative;
+  margin-top: 44px;
+  margin-left: 206.5px;
+  margin-bottom: 104px;
+}
+.sectionTitle::before {
+  content: url("../images/pcHeading.svg");
+  position: absolute;
+  left: -103.5px;
+  bottom: -24px;
+}
+.rightAlignTitle{
+  margin-top: 124px;
+  margin-left: 863.5px;
+}
+.rightAlignTitle::before {
+  left: -130.5px;
+}
+.enTitle {
+  font-size: 48px;
+}
+.jaTitle {
+  font-size: 24px;
+}
+
+/*//////////////////////////// 観光名所の設定 ////////////////////////////*/
+section h3 {
+  font-size: 36px;
+}
+.touristAttractionH3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+.touristAttractionContent::after{
+  content: "";
+  display: block;
+  width: 480px;
+  height: 1px;
+  text-align: center;
+  background-color: #000;
+  margin: 80px auto 0;
+}
+.touristAttractionContentRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.touristAttractionContentText1 {
+  width: 500px;
+  padding: 40px;
+  line-height: 32px;
+  background-color: rgba(100, 201, 155, 0.2);
+}
+.touristAttractionContentRow:not(:first-of-type){
+  margin-top: 40px;
+}
+.touristAttractionContentSubImages {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+.touristAttractionContentText2 {
+  width: 500px;
+  padding: 48px 40px;
+  line-height: 32px;
+  background-color: rgba(100, 201, 155, 0.2);
+}
+.touristAttractionContentText3 {
+  width: 500px;
+  padding-top: 40px;
+  text-align: center;
+  line-height: 20px;
+  background-color: rgba(100, 201, 155, 0.2);
+}
+#businessHours {
+  display: block;
+  margin-top: 40px;
+  font-weight: bold;
+}
+/*//////////////////////////// グルメの設定 ////////////////////////////*/
+#gourmetReadText {
+  width: 420px;
+  /* height: 216px; */
+  padding: 60px 0;
+  line-height: 32px;
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+}
+.gourmetMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.gourmetMenuItem {
+  width: 510px;
+  margin-bottom: 60px;
+}
+.gourmetMenuItem::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin-top: 40px;
+}
+.captionTitle {
+  display: flex;
+}
+.captionTitle h3 {
+  margin-right: 20px;
+  line-height:36px
+}
+.captionTitle span {
+  align-self: flex-end;
+  font-size: 24px;
+  line-height:24px
+}
+.gourmetFigure {
+  margin-top: 20px;
+}
+.gourmetFigure figcaption {
+  width: 510px;
+  margin-top: 20px;
+  line-height: 32px;
+}
+.modalOpenBtn {
+  margin-top: 40px;
+  line-height: 20px;
+}
+/*//////////////////////////// モーダルウィンドウの設定 ////////////////////////////*/
+#modalWindow {
+  display: none;/* 初期は非表示 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+#modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 675px;
+  height: 675px;
+  background-color: #FDFCFA;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+}
+.modalShow {
+  display: block;
+  animation: fadeIn 0.5s linear 0ms 1 forwards;
+}
+.modalHide {
+  animation: fadeOut 0.5s linear 0ms 1 forwards;
+}
+#modalCloseBtn {
+  width: 36px;
+  height: 36px;
+  margin-top: 20px;
+  margin-left: 619px;
+  background-image: url(../images/pcModalCloseBtn.png);
+}
+#modalImage{
+  margin-top: 4px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+/* bodyに着けてスクロールさせない為のクラス */
+.noScroll { 
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*//////////////////////////// ピックアップの設定 ////////////////////////////*/
+#pickUpReadText {
+  width: 420px;
+  line-height: 32px;
+}
+#pickUpReadText span{
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+#pickUpReadText span::after {
+  content: "";
+  display: block;
+  width: 420px;
+  height: 1px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+#hotSpringRow1 {
+  margin-top: 60px;
+}
+#hotSpringRow2 {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+.hotSpringFigure {
+  display: flex;
+}
+.hotSpringFigure figcaption{
+  margin-top: 74px;
+  margin-left: 60px;
+  line-height: 32px;
+
+}
+#hotelGuidance {
+  margin-top: 80px;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+#hotSpringRow3{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+#hotSpringRow3 figcaption {
+  width: 420px;
+  margin-bottom: 20px;
+  line-height: 32px;
+}
+#pickUpArticle::after {
+  content: "";
+  display: block;
+  width: 480px;
+  height: 1px;
+  background-color: #000;
+  margin: 80px auto;   
+}
+#backToTop {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 4px;
+  right: calc((100% - 1366px) / 2 + 20px);
+}
+#backToTop::after {
+  content: url(../images/pcToTopBtn.png);
+}
+
+/*//////////////////////////// RWDの設定 ////////////////////////////*/
+@media screen and (max-width: 768px){
+  body {
+  width: 375px;
+  font-size: 12px;
+  }
+  .hero p{
+    width: 247px;
+    height: 57.6px;
+    color: #ffffff;
+    left: 108px;
+    top: 601.8px;
+  }
+
+  #tainanLogo picture{
+    left: 88px;
+    top: 120px;
+  }
+  #heroSocialIcons {
+    width: 38.9px;
+    height: 136px;
+    top: 461px;
+    left: 20px;
+  }
+  .breadcrumb{
+  height: 32px;
+  padding: 8px 0 8px 20px;
+  border-bottom: 1px solid;
+  }
+  .innerWrapWide{
+  margin: 0 40px;
+  }
+  .sectionTitle {
+  position: relative;
+  width: 158px;
+  height: 24px;
+  margin: 28px auto 48px;
+  text-align: center;
+  }
+  .enTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .jaTitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .sectionTitle::before {
+    content: url("../images/spHeading.png");
+    left: -30.5px;
+    bottom: -8px;
+  }
+  section h3 {
+    font-size: 24px;
+  }
+
+/*//////////////////////////// レスポンシブアトラクションの設定 ////////////////////////////*/
+  .touristAttractionH3 {
+    margin-bottom: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .touristAttractionContentRow {
+    display: block;
+
+  }
+  .touristAttractionContentText1 {
+    width: 295px;
+    margin-top: 20px;
+    padding: 8px 36px;
+    line-height: 19.2px;
+  }
+  .touristAttractionContentRow:not(:first-of-type) {
+    margin-top: 20.4px;
+  }
+  .touristAttractionContentSubImages {
+    width: 295px;
+  }
+  .touristAttractionContentText2 {
+    width: 295px;
+    margin-top: 20px;
+    padding: 8px 32px;
+    line-height: 19.2px;
+  }
+  .touristAttractionContent::after {
+    content: "";
+    width: 223px;
+    height: 1px;
+    text-align: center;
+    margin: 40px auto;
+  }
+  .touristAttractionContentText3 {
+    width: 295px;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 12px;
+  }
+  #businessHours {
+    margin-top: 8px;
+  }
+
+  .innerWrapShort {
+    margin: 0 20px;
+  }
+  #gourmetReadText {
+    width: 223px;
+    margin: 0 auto;
+    padding: 12px 0;
+    line-height: 19.2px;
+  }
+  .captionTitle {
+    display: block;
+    text-align: center;
+  }
+  .captionTitle h3 {
+    margin-right: 0px;
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .captionTitle span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .gourmetFigure figcaption {
+    width: 223px;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 19.2px;
+  }
+  .gourmetMenuItem {
+    width: 335px;
+    margin-bottom: 20px;
+  }
+  .modalOpenBtn {
+    display: block;
+    width: 223px;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: end;
+    line-height: 12px;
+  }
+  .gourmetMenuItem::after {
+    width: 223px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*//////////////////////////// レスポンシブモーダルウィンドウの設定 ////////////////////////////*/
+  #modalContent {
+    width: 375px;
+    height: 375px;
+  }
+  #modalCloseBtn {
+    width: 28px;
+    height: 28px;
+    margin-top: 8px;
+    margin-left: 339px;
+    background-image: url(../images/spModalCloseBtn.png);
+}
+  #modalImage {
+    margin-top: 10px;
+  }
+
+/*//////////////////////////// レスポンシブピックアップの設定 ////////////////////////////*/
+
+  #pickUpReadText {
+    width: 223px;
+    margin: 0 auto;
+    line-height: 19.2px;
+  }
+  #pickUpReadText span {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  #pickUpReadText span::after {
+    width: 100%;
+    margin: 12px 0;
+  }
+  .hotSpringFigure {
+    display: block;
+  }
+   .hotSpringFigure img{
+    display: block;
+    margin: 0 auto;
+   }
+  .hotSpringFigure figcaption {
+    width: 223px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 19.2px;
+  }
+  #hotSpringRow2 {
+    margin-top: 20px;
+  }
+  #hotelGuidance {
+    width: 223px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 19.2px;
+    text-align: start;
+  }
+  #hotSpringRow3 {
+    display: block;
+    margin-top: 20px;
+  }
+  #hotSpringRow3 img{
+    display: block;
+    margin: 0 auto;
+  }
+  #hotSpringRow3 figcaption {
+    width: 223px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 19.2px;
+  }
+  #pickUpArticle::after {
+    width: 223px;
+    margin: 40px auto;
+  }
+  #backToTop {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  bottom: 4px;
+  right: calc((100% - 375px) / 2 + 4px);
+}
+  #backToTop::after {
+    content: url(../images/spToTopBtn.png);
+  }
+}
+
+/*//////////////////////////// pc用の時は必ず#drawerMenuをnoneに ////////////////////////////*/
+@media (min-width: 769px) {
+  #drawerMenu {
+    display: none !important;
+  }
+}
