@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Design House Renovations</title>
+</head>
+<body>
+
+<header id="header">
+    <h1 id="site-Title" class="site-Title">Design House Renovations</h1>
+    <nav class="gMenu">
+      <input class="menu-Btn" type="checkbox" id="menu-Btn">
+      <label class="menu-Icon" for="menu-Btn">
+        <span class="navicon"></span>
+      </label>
+      <ul class="menu">
+          <li><a href="#concept"><p>コンセプト</p></a></li>
+          <li><a href="#service"><p>サービス</p></a></li>
+          <li><a href="#flow"><p>施工の流れ</p></a></li>
+          <li><a href="#qanda"><p>よくあるご質問</p></a></li>
+          <li><a href="#contact"><p>お問い合わせ</p></a></li>
+      </ul>
+    </nav>
+</header>
+<main>
+    <div id="headerImg">
+        <img src="images/hero 3.png" alt="headerimg" class="pc">
+        <img src="images/hero.png" alt="headerimg" class="sp">
+    </div>
+    <section id="concept">
+        <h2 class="title">CONCEPT</h2>
+        <p class="subtitle">コンセプト</p>
+        <h3 class="subsubtitle">家族が笑顔になれる場所</h3>
+        <p class="text1">家族が集う、温かく居心地の良い空間づくりを目指して、幅広い年代の方に安心して過ごしていただける空間づくりや、お手入れ<br class="sp">のしやすい素材を使用したリフォームをご提案いたします。</p>
+    </section>
+    <section id="service">
+        <h2 class="title">SERVICE</h2>
+        <p class="subtitle">サービス</p>
+        <ul>
+            <li>
+              <img src="images/list-1-img.png" alt="浴室">
+              <h3 class="content-Title">浴室</h3>
+              <p class="text2">ご家族が一緒に入れる広めの浴槽や手すり等、安全性に配慮しています。</p>
+              <a href="#"><p>more&#x25B8;</p></a>
+            </li>
+            <li>
+              <img src="images/list-2-img.png" alt="リビング">
+              <h3 class="content-Title">リビング</h3>
+              <p class="text2">照明や家具の配置等、くつろぎやすい空間づくりを大切にしています。</p>
+              <a href="#"><p>more&#x25B8;</p></a>
+            </li>
+            <li>
+              <img src="images/list-3-img.png" alt="キッチン">
+              <h3 class="content-Title">キッチン</h3>
+              <p class="text2">機能性だけでなく、デザイン性にもこだわっております。</p>
+              <a href="#"><p>more&#x25B8;</p></a>
+            </li>
+          </ul>
+    </section> 
+    <section id="flow">
+        <div class="flow-Container">
+            <h2 class="title">FLOW</h2>
+            <p class="subtitle">施工の流れ</p>
+            <div class="flow-Steps">
+              <div class="step1">ご相談</div>
+              <div class="arrow1">▶</div>
+              <div class="step2">現地調査</div>
+              <div class="arrow2">▶</div>
+              <div class="step3">お見積り</div>
+              <div class="arrow3">▶</div>
+              <div class="step4">ご契約</div>
+              <div class="arrow4">▶</div>
+              <div class="step5">施工</div>
+              <div class="arrow5">▶</div>
+              <div class="step6">お引渡し</div>
+            </div>
+        </div>
+    </section>
+    <section id="qanda">
+        <h2 class="title">Q&A</h2>
+        <p class="subtitle">よくあるご質問</p>
+        <div class="qa-Section">
+          <div class="qa-Block">
+            <div class="q-Icon">Q.</div>
+            <div class="q-Text">見積りは無料ですか？</div>
+            <div class="a-Block">
+            <div class="a-Icon">A.</div>
+            <div class="a-Text">
+              はい。お見積りは無料で承っております。ホームページよりお気軽にお問い合わせください。
+            </div>
+            </div>  
+          </div>
+      
+          <div class="qa-Block">
+            <div class="q-Icon">Q.</div>
+            <div class="q-Text">普段通り生活をしながらのリフォーム工事は可能ですか？</div>
+            <div class="a-Block">
+            <div class="a-Icon">A.</div>
+            <div class="a-Text">
+              <p>はい。もちろん可能です。工事中の箇所は、何日間か使用できなくなる場合もございますのであ<br class="sp">らかじめご了承ください。大型リフォームの場合には、仮住まいもお薦めしております。</p>              </div>
+          </div>
+        </div>
+    </section>
+    <section id="contact">
+            <h2 class="title">CONTACT</h2>
+            <p class="subtitle">お問い合わせ</p>
+            <form class="contact-Form">
+              <div class="form-Row">
+                <label class="label-Title">お問い合わせ種類 <span class="required">必須</span></label>
+                <div class="input-Area">
+                  <label><input type="radio" name="type" value="資料請求"> 資料請求</label>
+                  <label><input type="radio" name="type" value="ご相談"> ご相談</label>
+                </div>
+              </div>
+          
+              <div class="form-Row">
+                <label>お名前 <span class="required">必須</span></label>
+                <input type="text" name="name" required>
+              </div>
+          
+              <div class="form-Row">
+                <label>フリガナ <span class="required">必須</span></label>
+                <input type="text" name="furigana" required>
+              </div>
+          
+              <div class="form-Row" id="top3">
+                <label>電話番号 <span class="required">必須</span></label>
+                <input type="tel" name="tel" required>
+              </div>
+          
+              <div class="form-Row" id="top2">
+                <label>住所 <span class="required">必須</span></label>
+                <div class="address-Row">
+                  <div class="zipcode">
+                    <p>&#12306;</p><input type="text" name="zipcode" required>
+                  </div>
+                  <input type="text" name="address" required>
+                </div>
+              </div>
+          
+              <div class="form-Row">
+                <label>メールアドレス <span class="required">必須</span></label>
+                <input type="email" name="email" required>
+              </div>
+
+              <div class="form-Row">
+                <label>メールアドレス（確認用） <span class="required">必須</span></label>
+                <input type="email" name="email_confirm" required>
+              </div>
+          
+              <div class="form-Row" id="top1">
+                <label>お問い合わせ内容</label>
+                <textarea name="message" rows="5"></textarea>
+              </div>
+          
+              <div class="form-Row center">
+                <button type="submit" class="submit-Btn">入力内容を確認する ▶</button>
+              </div>
+            </form>
+    </section>
+    <section id="backtop">
+      <a href="#headerImg"><img src="images/pageTop.png" alt="toppagebutton"></a>
+    </section>
+</main>
+<div id="footer">
+    <footer>
+        <p>&copy;2023 Design House Renovations</p>
+    </footer>
+</div>
+</body>
+</html>
