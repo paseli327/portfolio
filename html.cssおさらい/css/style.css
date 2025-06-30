@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body {
+    background-color: #3700ff;
+}
+img{
+    width: 100px;
+    height: 150px;
+}
+.layoutWrap {
+    width: 1240px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    flex-basis: 920px;
+    background-color: #ffffff;
+}
+aside {
+    flex-basis: 284px;
+}
+header, footer {
+    text-align: center;
+}
+.ffDotGotic16 {
+    font-family: 'DotGothic16', sans-serif;;
+}
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardbackimg {
+    display: flex;
+    justify-content: center;
+}
+table,
+table th,
+table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0  ;
+}
+table thead tr th{
+text-align: center;
+padding: 5px;
+}
+table thead tr td{
+text-align: center;
+padding: 5px;
+}
+.cards {
+    background-color: #1ba100;
+    display: flex;
+    justify-content: center;
+    border: #FFD700 5px double;
+}
+span {
+    color: #ff0000;
+    font-weight: bold;
+}
+@media screen and (max-width: 640px) {
+
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .layoutWrap {
+        display: block;
+        width: 100%;
+    }
+    aside ul{
+        display: flex;
+        justify-content:space-around;
+    }
+    .sp {
+        display: none;
+    }
+    .cards img {
+width: 70px;
+height: auto;
+    }
+}
