@@ -1,0 +1,146 @@
+body {
+  font-family: sans-serif;
+  background: #121213;
+  color: white;
+  text-align: center;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 5px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  text-align: center;
+  background: #3a3a3c;
+  border: 2px solid #555;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct {
+  background: #538d4e !important;
+}
+
+.present {
+  background: #b59f3b !important;
+}
+
+.absent {
+  background: #3a3a3c !important;
+  opacity: 0.5;
+}
+
+.keyboard {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.key-row {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  width: 40px;
+  height: 60px;
+  font-size: 1.2em;
+  background: #818384;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.key.correct {
+  background: #538d4e !important;
+}
+
+.key.present {
+  background: #b59f3b !important;
+}
+
+.key.absent {
+  background: #3a3a3c !important;
+  opacity: 0.5;
+}
+
+.key.enter, .key.delete {
+  width: 60px;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 200px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 0px;
+  font-size: 1em;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ======= ✅ レスポンシブ対応 ========== */
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: repeat(5, 55px);
+  }
+
+  .tile {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+  }
+
+  .key {
+   margin-left: 0;
+        width: 30px;
+        height: 35px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    body {
+      padding-bottom: 0;
+    }
+
+  .key.enter, .key.delete {
+    width: 45px;
+  }
+
+  input[type="text"] {
+    width: 160px;
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}

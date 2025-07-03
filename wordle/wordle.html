@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style2.css">
+  <title>Wordle</title>
+</head>
+<body>
+  <h1>Wordle</h1>
+  <p id="loading">単語を読み込み中...</p>
+  <div class="board" id="board"></div>
+  <input type="text" id="guessInput" maxlength="5" placeholder="Enter word" disabled />
+  <button id="submitBtn" onclick="validateAndSubmit()" type="button" disabled>Submit</button>
+  <p id="message"></p>
+  <div class="keyboard" id="keyboard"></div>
+</body>
+<script src="script2.js"></script>
+</html>
