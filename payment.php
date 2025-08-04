@@ -3,9 +3,9 @@ session_start();
 require 'includes/header.php';
 
 // DB接続設定
-$dsn = 'mysql:host=localhost;dbname=ccdonuts;charset=utf8';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '****';
+$password = '****';
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -80,4 +80,5 @@ try {
 }
 
 require 'includes/footer.php';
+
 ?>
