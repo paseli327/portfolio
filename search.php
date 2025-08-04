@@ -3,10 +3,9 @@ session_start();
 require 'includes/header.php';
 
 // データベース接続情報
-$host = 'localhost';
-$db_name = 'ccdonuts';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '****';
+$password = '****';
 
 $searchResults = [];
 $searchQuery = '';
@@ -79,5 +78,6 @@ try {
         <?php endif; ?>
     </div>
 </main>
+
 
 <?php require 'includes/footer.php'; ?>
