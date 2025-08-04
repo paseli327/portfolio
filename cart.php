@@ -2,9 +2,9 @@
 session_start();
 require 'includes/header.php';
 
-$dsn = 'mysql:host=localhost;dbname=ccdonuts;charset=utf8';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '*****';
+$password = '****';
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -135,3 +135,4 @@ try {
 <?php endif; ?>
 
 <?php require 'includes/footer.php'; ?>
+
