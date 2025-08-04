@@ -3,9 +3,9 @@ session_start();
 require 'includes/header.php'; // ヘッダーファイルの読み込み
 
 // DB接続設定
-$dsn = 'mysql:host=localhost;dbname=ccdonuts;charset=utf8';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '****';
+$password = '****';
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -162,3 +162,4 @@ foreach ($cart_items as $item) {
 </div>
 
 <?php require 'includes/footer.php'; // フッターファイルの読み込み ?>
+
