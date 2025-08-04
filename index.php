@@ -3,9 +3,9 @@ session_start();
 require 'includes/header.php';
 
 // DB接続
-$dsn = 'mysql:host=localhost;dbname=ccdonuts;charset=utf8';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '****';
+$password = '****';
 $ranking_products = [];
 
 try {
@@ -112,3 +112,4 @@ $display_ranking = array_pad($ranking_products, 6, null);
 </div>
 
 <?php require 'includes/footer.php'; ?>
+
