@@ -1,0 +1,30 @@
+.productDetail {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 120px 0;
+    gap: 40px;
+    font-size: 24px;
+}
+.productDetail img {
+    height: auto;
+    width: 540px;
+    object-fit: cover;
+}
+.productText {
+   width: 460px;
+}
+.price {
+    color: #d43f00;
+    margin: 40px 0;
+}
+.productText h1 {
+    color: #7F5539;
+    padding-bottom: 20px;
+}
+.productText2 {
+    padding: 40px 0 40px 0;
+    border-top:  1px solid #E6CCB2;
+    border-bottom: 1px solid #E6CCB2;
+    line-height: 38.4px;
+    color: #7F5539;
+}
