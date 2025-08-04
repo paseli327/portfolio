@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-$dsn = 'mysql:host=localhost;dbname=ccdonuts;charset=utf8';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '****';
+$password = '****';
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -58,4 +58,5 @@ session_unset();  // セッション変数を削除
 session_destroy(); // セッションを破棄
 header("Location: index.php"); // トップページへリダイレクト
 exit;
+
 ?>
