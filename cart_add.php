@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-$dsn = 'mysql:host=localhost;dbname=ccdonuts;charset=utf8';
-$user = 'ccStaff';
-$password = 'ccDonuts';
+$dsn = '****';
+$user = '****';
+$password = '****';
 
 try {
     $pdo = new PDO($dsn, $user, $password);
@@ -108,4 +108,5 @@ try {
 
 header('Location: cart.php');
 exit;
+
 ?>
